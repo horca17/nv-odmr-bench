@@ -36,10 +36,8 @@ The bench detected ODMR for the first time on **23 Sep 2026**. On **7 Oct 2026**
 ```
 firmware/       ESP32 sketch (measurement engine)
 control/        Python scripts that drive the bench and save each run (.npz)
-analysis/       analysis of saved runs; does not touch hardware
 data/           raw runs, named by date and time (e.g. 23Sep_1538.npz)
 digital-twin/   Qiskit notebooks for the IBM Quantum emulation (paper v3)
-docs/           technical report, photos, schematics
 ```
 
 ## Method rules
