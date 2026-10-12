@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "NV-center ODMR bench and IBM Quantum digital twin"
+authors:
+  - family-names: "Cáceres"
+    given-names: "Horacio S."
+    orcid: "https://orcid.org/0009-0003-7949-3783"
+    affiliation: "Independent researcher, Córdoba, Argentina"
+doi: 10.5281/zenodo.20191912
+url: "https://www.qubistry.co/#nv"
+repository-code: "https://github.com/horca17/nv-odmr-bench"
+license: AGPL-3.0-only
+keywords:
+  - NV center
+  - ODMR
+  - diamond magnetometry
+  - quantum sensing
+  - digital twin
+  - IBM Quantum
