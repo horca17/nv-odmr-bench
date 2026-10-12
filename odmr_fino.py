@@ -12,7 +12,7 @@ from datetime import datetime
 
 F_INI, F_FIN, PASO = 2810.0, 2930.0, 0.15
 F_REF      = 2350.0
-POTENCIA   = -4
+POTENCIA   = +2
 ANCHO      = 10.0
 ANCHOS     = [10, 18, 26, 40, 60]
 NV         = (2850.0, 2890.0)
@@ -346,3 +346,7 @@ for a_ in ax:
     a_.axvspan(*NV, color="green", alpha=.08)
     a_.axvline(2870, color="green", ls=":", lw=1.2)
 plt.tight_layout(); plt.show()
+
+# %%
+print(hex(TABLA[0][4][3]), hex(REGS_REF[4][3]))
+# %%
