@@ -7,7 +7,7 @@ A home-built bench for optically detected magnetic resonance (ODMR) with NV cent
 
 ## Status
 
-The bench detected ODMR for the first time on **23 Sep 2026**. On **7 Oct 2026** a magnet test at fixed frequency confirmed the signal, while the off-resonance control stayed flat.
+The bench detected ODMR for the first time on **23 Sep 2026**. On **7 Oct 2026** a magnet test at fixed frequency confirmed the signal, while the off-resonance control stayed flat. On **13 Oct 2026** the loop, diamond and filter were fixed in a single block, and a microwave power series (−4, −1, +2, +5 dBm, nominal synthesizer output) was measured.
 
 | Quantity | Value | Date |
 |---|---|---|
@@ -20,12 +20,18 @@ The bench detected ODMR for the first time on **23 Sep 2026**. On **7 Oct 2026**
 | Lower flank 2866.0 MHz, with magnet (3 cycles) | −3.13 ± 0.08 counts | 7 Oct |
 | Upper flank 2873.5 MHz, with magnet (3 cycles) | −1.94 ± 0.06 counts | 7 Oct |
 | Off-resonance control 2818.5 MHz (3 cycles) | +0.04 ± 0.05 counts | 7 Oct |
+| Contrast, microwave loop realigned (2-Lorentzian fit, normalized to optical signal) | 1.4–2.5 % | 12 Oct |
+| Line amplitude vs. microwave power, −4 to +5 dBm (loop and diamond fixed) | ×1.5 per 3 dB, not saturated | 13–14 Oct |
+| Linewidth per line (FWHM), −4 to +5 dBm | 2.8–3.2 MHz, no power broadening | 13–14 Oct |
+| Repeatability, two consecutive runs at +5 dBm | amplitudes agree within 1 % | 13 Oct |
+
+**Note on power:** until 12 Oct 2026 the control script always sent +2 dBm regardless of the `POTENCIA` setting (fixed on 12 Oct). Run `12Oct_1525` says −4 dBm in its metadata but was measured at +2 dBm.
 
 **Open question:** the origin of the ~5 MHz zero-field doublet. Nothing on the bench moved it (removing nearby magnets, switching off equipment, moving power supplies away).
 
 ## Hardware
 
-- **Diamond:** single-crystal HPHT type Ib, ⟨111⟩ face, 4 × 4 × 1 mm.
+- **Diamond:** HPHT type Ib, twinned, (111) face (Element Six SC Macle); triangular plate, sides 4.0 × 4.0 × 3.0 mm, 1.0 mm thick.
 - **Laser and optics:** Thorlabs L520P50 laser (520 nm, 50 mW) with its own LM317 current driver, LT240P-A collimator, FELH0550 long-pass filter.
 - **Detection:** BPW34 photodiode into an OPA2134 transimpedance amplifier. The readout is differential: signal minus a reference taken with the microwaves at 2350 MHz.
 - **Microwaves:** ADF435x PLL synthesizer into a thin copper-wire loop with 51 Ω in series, no amplifier.
