@@ -85,6 +85,8 @@ The magnetometer field is computed as B = −K·(D − D0) − X / (p·γ), with
 
 The idea of measuring through the phase shift, in real time, came from a conversation with Matías on 9 October 2026.
 
+The diamond is from Element Six (SC Macle, HPHT type Ib).
+
 The firmware started from **[Uncut Gem](https://github.com/QuantumVillage/UncutGem)** by Quantum Village, which is released under the **GNU AGPL v3**. The ADF4350 driver in this repository comes from that project. For that reason this repository is also distributed under AGPL v3.
 
 ---
